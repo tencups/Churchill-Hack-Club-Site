@@ -5,10 +5,9 @@ const Contact = () => {
   return (
     <div id="contact">
       <h1 className={styles.title}>📭 Contact</h1>
-      <p className={styles.contact}>
+      <p style={{ width: "93vw" }} className={styles.contact}>
         If you have any questions about Hack Club, fill free to email us at{" "}
         <u>
-          <br />
           <a
             href="mailto:churchillhackclub@gmail.com?Subject=Hello%20again"
             target="_top"
