@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li,
+a {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.logo {
+  margin-left: 10vw;
+  cursor: pointer;
+  margin-top: 0;
+  padding-top: 0;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+
+  margin-left: 3vw;
+  margin-top: 40px;
+  border-bottom: 3px solid black;
+}
+.nav_links li:nth-child(3) {
+  margin-right: 100px;
+}
+
+.nav_links li a {
+  transition: all 0.3 ease 0s;
+}
+
+.nav_links li a:hover {
+  color: grey;
+}
+
+@media screen and (max-width: 630px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin: 5px;
+  }
+  nav {
+    position: relative;
+  }
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 1%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+  }
+  .nav_links {
+    position: fixed;
+    background: black;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -10%);
+    -webkit-clip-path: circle(100px at 90% -10%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+  }
+  .nav_links.open {
+    clip-path: circle(1000px at 90% -10%);
+    -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
+  }
+  .nav_links li {
+    opacity: 0;
+  }
+  .nav_links li a {
+    font-size: 25px;
+  }
+  .nav_links li:nth-child(1) {
+    transition: all 0.5s ease 0.2s;
+  }
+  .nav_links li:nth-child(2) {
+    transition: all 0.5s ease 0.4s;
+  }
+  .nav_links li:nth-child(3) {
+    transition: all 0.5s ease 0.6s;
+  }
+  li.fade {
+    opacity: 1;
+  }
+}
