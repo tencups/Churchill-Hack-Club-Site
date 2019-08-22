@@ -5,6 +5,9 @@
   color: white;
   text-align: center;
   background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
-  margin: 3vw 4vw;
+  margin-top: 3vw;
+  margin-bottom: 7vw;
+  margin-left: 4vw;
+  margin-right: 4vw;
   padding: 7% 0px;
 }
