@@ -6,7 +6,7 @@ const Card = () => {
   return (
     <div>
       <h1 className={styles.card}>
-        <span style={{ fontSize: "300%" }}>Churchill Hack Club</span>
+        <span style={{ fontSize: "290%" }}>Churchill Hack Club</span>
         <br />
         <span style={{ fontSize: "150%", padding: "0px 1%" }}>
           A club where students can learn to code at <br />

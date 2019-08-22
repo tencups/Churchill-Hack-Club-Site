@@ -11,7 +11,8 @@ const Footer = () => {
           paddingBottom: "1%"
         }}
       >
-        Made with 🥴 by Michael
+        Made with 🥴 <br />
+        by Michael
       </p>
     </>
   )
