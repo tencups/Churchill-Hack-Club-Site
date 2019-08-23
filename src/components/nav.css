@@ -5,7 +5,17 @@
   margin: 0;
   padding: 0;
 }
-
+.toolbar {
+  width: 100%;
+  height: 56px;
+}
+.toolbar__navigation {
+  display: flex;
+  height: 100%;
+}
+.toolbar_navigation-items ul {
+  display: flex;
+}
 li,
 a {
   font-family: "Lexend Deca", sans-serif;
@@ -15,7 +25,7 @@ a {
   text-decoration: none;
 }
 
-.logo {
+.toolbar__logo {
   margin-left: 10vw;
   cursor: pointer;
   margin-top: 0;
@@ -32,10 +42,8 @@ header {
 
 .nav_links li {
   display: inline-block;
-
-  margin-left: 3vw;
-  margin-top: 40px;
-  border-bottom: 3px solid black;
+  margin-left: 1vw;
+  margin-top: -3px;
 }
 .nav_links li:nth-child(3) {
   margin-right: 100px;
@@ -43,62 +51,24 @@ header {
 
 .nav_links li a {
   transition: all 0.3 ease 0s;
+  border-bottom: 3px solid black;
 }
 
 .nav_links li a:hover {
   color: grey;
 }
+@media (max-width: 850px) {
+  .toolbar_navigation-items {
+    display: none;
+  }
+  .toolbar__logo {
+    height: 60px;
+    width: 160px;
+  }
+}
 
-@media screen and (max-width: 630px) {
-  .line {
-    width: 30px;
-    height: 3px;
-    background: black;
-    margin: 5px;
-  }
-  nav {
-    position: relative;
-  }
-  .hamburger {
-    position: absolute;
-    cursor: pointer;
-    right: 1%;
-    top: 50%;
-    transform: translate(-5%, -50%);
-    z-index: 2;
-  }
-  .nav_links {
-    position: fixed;
-    background: black;
-    height: 100vh;
-    width: 100%;
-    flex-direction: column;
-    clip-path: circle(100px at 90% -10%);
-    -webkit-clip-path: circle(100px at 90% -10%);
-    transition: all 1s ease-out;
-    pointer-events: none;
-  }
-  .nav_links.open {
-    clip-path: circle(1000px at 90% -10%);
-    -webkit-clip-path: circle(1000px at 90% -10%);
-    pointer-events: all;
-  }
-  .nav_links li {
-    opacity: 0;
-  }
-  .nav_links li a {
-    font-size: 25px;
-  }
-  .nav_links li:nth-child(1) {
-    transition: all 0.5s ease 0.2s;
-  }
-  .nav_links li:nth-child(2) {
-    transition: all 0.5s ease 0.4s;
-  }
-  .nav_links li:nth-child(3) {
-    transition: all 0.5s ease 0.6s;
-  }
-  li.fade {
-    opacity: 1;
+@media (min-width: 769px) {
+  .toolbar__toggle-button {
+    display: none;
   }
 }

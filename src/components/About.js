@@ -7,8 +7,16 @@ const About = () => {
       <h1 className={styles.title}>👩‍💻 About</h1>
       <p style={{ width: "93vw" }} className={styles.about}>
         Churchill Hack Club is a computer programming club at Winston Churchill
-        High School in Potomac, MD, and is a chapter of the international
-        <a style={{ fontSize: "100%" }} href="https://hackclub.com/">
+        High School in Potomac, MD, and is a chapter of the international{" "}
+        <a
+          style={{
+            fontSize: "100%",
+            margin: "0",
+            padding: "0",
+            display: "inline-block"
+          }}
+          href="https://hackclub.com/"
+        >
           <em> Hack Club</em>
         </a>{" "}
         organization.
