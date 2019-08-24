@@ -6,13 +6,14 @@
 }
 
 .resources {
-  padding-left: 30%;
+  padding-left: 27%;
   padding-right: 20%;
   list-style: none;
 }
+
 .resources li p {
-  font-size: 200%;
-  padding-bottom: 1%;
+  font-size: 150%;
+  padding-bottom: 0.5%;
 }
 
 .resources a p::before {
@@ -32,6 +33,17 @@
 
 .resources li:nth-child(4) a:hover {
   text-decoration: underline;
-  text-decoration-color: lightgreen;
-  color: lightgreen;
+  text-decoration-color: rgb(61, 194, 28);
+  color: rgb(61, 194, 28);
+}
+
+.resources li:nth-child(5) a:hover {
+  text-decoration: underline;
+  text-decoration-color: #61dafb;
+  color: #61dafb;
+}
+.resources li:nth-child(6) a:hover {
+  text-decoration: underline;
+  text-decoration-color: #ed225d;
+  color: #ed225d;
 }

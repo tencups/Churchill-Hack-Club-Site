@@ -6,7 +6,7 @@ const Resource = () => {
     <div>
       <h1 className={styles.title}>📚 Resources </h1>
       <ul className={styles.resources}>
-        <p style={{ fontSize: "150%", margin: "0" }}>
+        <p style={{ fontSize: "150%", paddingLeft: "6%" }}>
           Here are some resources to help you on your{" "}
           <a
             style={{
@@ -16,6 +16,8 @@ const Resource = () => {
               display: "inline-block"
             }}
             href="https://hackclub.com/workshops/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <u>workshop</u>
           </a>
@@ -47,6 +49,24 @@ const Resource = () => {
             href="https://www.w3schools.com/"
           >
             <p>w3schools</p>
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://reactjs.org/docs/getting-started.html"
+          >
+            <p>React Docs</p>
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://p5js.org/reference/"
+          >
+            <p>p5js Reference</p>
           </a>
         </li>
       </ul>
