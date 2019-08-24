@@ -1,0 +1,37 @@
+.title {
+  padding-left: 30%;
+  font-size: 300%;
+  padding-bottom: 1%;
+  margin-top: 5vw;
+}
+
+.resources {
+  padding-left: 30%;
+  padding-right: 20%;
+  list-style: none;
+}
+.resources li p {
+  font-size: 200%;
+  padding-bottom: 1%;
+}
+
+.resources a p::before {
+  content: "- ";
+}
+.resources li:nth-child(2) a:hover {
+  text-decoration: underline;
+  text-decoration-color: lightskyblue;
+  color: lightskyblue;
+}
+
+.resources li:nth-child(3) a:hover {
+  text-decoration: underline;
+  text-decoration-color: darkgreen;
+  color: darkgreen;
+}
+
+.resources li:nth-child(4) a:hover {
+  text-decoration: underline;
+  text-decoration-color: lightgreen;
+  color: lightgreen;
+}

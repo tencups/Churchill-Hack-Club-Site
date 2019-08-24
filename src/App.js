@@ -7,6 +7,7 @@ import Faq from "./components/Faq"
 import About from "./components/About"
 import SideDrawer from "./components/SideDrawer"
 import Backdrop from "./components/Backdrop"
+import Resources from "./components/Resources"
 import "./App.css"
 
 class App extends React.Component {
@@ -37,7 +38,7 @@ class App extends React.Component {
           />
           <Card />
           <About />
-
+          <Resources />
           <Faq
             heading={true}
             title="When and where are the meetings?"
