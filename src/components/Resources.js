@@ -3,7 +3,7 @@ import styles from "./resource.module.css"
 
 const Resource = () => {
   return (
-    <div>
+    <div id="resources">
       <h1 className={styles.title}>📚 Resources </h1>
       <ul className={styles.resources}>
         <p style={{ fontSize: "150%", paddingLeft: "6%" }}>

@@ -72,6 +72,18 @@ class Navbar extends React.Component {
                     activeClass="active"
                     spy={true}
                     smooth={true}
+                    to="resources"
+                    activeClassName="selected"
+                  >
+                    Resources
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    style={{ cursor: "pointer" }}
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}
                     to="contact"
                     activeClassName="selected"
                   >

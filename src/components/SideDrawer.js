@@ -41,6 +41,19 @@ const sideDrawer = props => {
             activeClass="active"
             spy={true}
             smooth={true}
+            to="resources"
+            onClick={props.click}
+            activeClassName="selected"
+          >
+            Resources
+          </Link>
+        </li>
+        <li>
+          <Link
+            style={{ cursor: "pointer" }}
+            activeClass="active"
+            spy={true}
+            smooth={true}
             onClick={props.click}
             to="contact"
             activeClassName="selected"

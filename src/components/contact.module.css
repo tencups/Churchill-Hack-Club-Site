@@ -11,6 +11,10 @@
   font-size: 150%;
 }
 
+.emailhere {
+  display: none;
+  color: orangered;
+}
 @media (max-width: 850px) {
   .title {
     padding: 0%;
@@ -18,5 +22,14 @@
   }
   .contact {
     text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .email {
+    display: none;
+  }
+  .emailhere {
+    display: inline-block;
   }
 }
