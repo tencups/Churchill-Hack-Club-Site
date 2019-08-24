@@ -8,7 +8,8 @@ const Footer = () => {
           textAlign: "center",
           marginTop: "5%",
           fontSize: "150%",
-          paddingBottom: "1%"
+          paddingBottom: "1%",
+          marginInlineEnd: "0px"
         }}
       >
         Made with 😵 <br />

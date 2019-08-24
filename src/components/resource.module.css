@@ -50,11 +50,17 @@
 
 @media (max-width: 850px) {
   .title {
-    padding: 0%;
+    padding: 0;
     text-align: center;
   }
   .resources {
-    padding: 0%;
+    padding: 0;
     text-align: center;
+  }
+  p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 30px;
   }
 }
