@@ -10,3 +10,14 @@
   padding-right: 20%;
   font-size: 150%;
 }
+
+@media (max-width: 850px) {
+  .title {
+    padding: 0%;
+    text-align: center;
+  }
+  .contact {
+    padding: 0%;
+    text-align: center;
+  }
+}

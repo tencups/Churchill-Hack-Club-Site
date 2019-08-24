@@ -47,3 +47,14 @@
   text-decoration-color: #ed225d;
   color: #ed225d;
 }
+
+@media (max-width: 850px) {
+  .title {
+    padding: 0%;
+    text-align: center;
+  }
+  .resources {
+    padding: 0%;
+    text-align: center;
+  }
+}

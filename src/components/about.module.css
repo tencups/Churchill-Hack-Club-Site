@@ -9,3 +9,13 @@
   padding-right: 20%;
   font-size: 150%;
 }
+@media (max-width: 850px) {
+  .title {
+    padding-left: 0%;
+    text-align: center;
+  }
+  .about {
+    padding: left 30%;
+    text-align: center;
+  }
+}
