@@ -1,17 +1,10 @@
 import React from "react"
+import styles from "./footer.module.css"
 
 const Footer = () => {
   return (
     <>
-      <p
-        style={{
-          textAlign: "center",
-          marginTop: "5%",
-          fontSize: "150%",
-          paddingBottom: "1%",
-          paddingLeft: "14%"
-        }}
-      >
+      <p className={styles.title}>
         <br />
         <br />
         <br />
