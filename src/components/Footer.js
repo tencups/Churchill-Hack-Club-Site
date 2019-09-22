@@ -9,13 +9,11 @@ const Footer = () => {
           marginTop: "5%",
           fontSize: "150%",
           paddingBottom: "1%",
-          marginInlineEnd: "0px"
+          paddingLeft: "14%"
         }}
       >
         <br />
         <br />
-        Made with 😵 <br />
-        by Michael
         <br />
         <span style={{ color: "grey", fontSize: "70%" }}>
           © Churchill Hack Club. All rights reserved.

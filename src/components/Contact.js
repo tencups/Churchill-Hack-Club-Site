@@ -1,6 +1,7 @@
 import React from "react"
 import styles from "./contact.module.css"
 import { NONAME } from "dns"
+import { SSL_OP_SINGLE_DH_USE } from "constants"
 
 const Contact = () => {
   return (
@@ -37,7 +38,6 @@ const Contact = () => {
         </a>
         <br />
         <br />
-        Chat with us on our{" "}
         <a
           style={{
             fontSize: "100%",
@@ -48,11 +48,51 @@ const Contact = () => {
           href="https://discordapp.com/invite/pSrxaax"
           target="_blank"
         >
-          <u>
-            <span style={{ color: "#7289da" }}>discord</span>
-          </u>
+          <span style={{ color: "#7289da" }}>discord</span>
         </a>{" "}
-        server!
+        <br />
+        <a
+          style={{
+            fontSize: "100%",
+            margin: "0",
+            padding: "0",
+            display: "inline-block",
+            background: "-webkit-linear-gradient(#f803fc, #ff8d03)",
+            webkitBackgroundClip: "text",
+            webkitTextFillColor: "transparent",
+            marginTop: "10px"
+          }}
+          href="https://www.instagram.com/churchill.hackclub/"
+          target="_blank"
+        >
+          <u>
+            <span style={{ color: "#7289da" }}>insta</span>
+          </u>
+        </a>
+        {"  "}
+        <br />{" "}
+        <u>
+          <a
+            style={{
+              fontSize: "100%",
+              margin: "0",
+              padding: "0",
+              display: "inline-block",
+              background:
+                "-webkit-linear-gradient(#2EB67D, #36C5F0,#E01E5A,#ECB22E)",
+              webkitBackgroundClip: "text",
+              webkitTextFillColor: "transparent",
+              marginTop: "10px"
+            }}
+            href="https://hackclub.com/community/"
+            target="_blank"
+          >
+            <u>
+              <span style={{ color: "#7289da" }}>slack</span>
+            </u>
+          </a>
+          {"  "}
+        </u>
       </p>
     </div>
   )

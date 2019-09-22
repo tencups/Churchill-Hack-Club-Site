@@ -13,7 +13,10 @@ const About = () => {
             fontSize: "100%",
             margin: "0",
             padding: "0",
-            display: "inline-block"
+            display: "inline-block",
+            background: "-webkit-linear-gradient(#fc033d,#fc033d)",
+            webkitBackgroundClip: "text",
+            webkitTextFillColor: "transparent"
           }}
           href="https://hackclub.com/"
         >
