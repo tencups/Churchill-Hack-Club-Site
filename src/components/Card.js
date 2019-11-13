@@ -1,6 +1,6 @@
-import React from "react"
-import styles from "./card.module.css"
-import Countdown from "react-countdown-now"
+import React from "react";
+import styles from "./card.module.css";
+import Countdown from "react-countdown-now";
 
 const Card = () => {
   return (
@@ -29,13 +29,13 @@ const Card = () => {
         <br />
         <br />
         <span style={{ padding: "0px 1%" }}>
-          Next Meeting is on <span style={{ fontSize: "110%" }}>9/26</span>
+          Next Meeting is on <span style={{ fontSize: "110%" }}>11/14</span>
         </span>
         <br />
-        <Countdown date={"Thu, 26 Sep 2019 11:15:00"} />
+        <Countdown date={"Thu, 14 Nov 2019 11:15:00"} />
       </h1>
     </div>
-  )
-}
+  );
+};
 
-export default Card
+export default Card;
