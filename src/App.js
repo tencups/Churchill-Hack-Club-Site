@@ -1,31 +1,32 @@
-import React from "react"
-import Navbar from "./components/Navbar"
-import Card from "./components/Card"
-import Contact from "./components/Contact"
-import Footer from "./components/Footer"
-import Faq from "./components/Faq"
-import About from "./components/About"
-import SideDrawer from "./components/SideDrawer"
-import Backdrop from "./components/Backdrop"
-import Resources from "./components/Resources"
-import "./App.css"
+import React from "react";
+import Navbar from "./components/Navbar";
+import Card from "./components/Card";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Faq from "./components/Faq";
+import About from "./components/About";
+import SideDrawer from "./components/SideDrawer";
+import Backdrop from "./components/Backdrop";
+import Resources from "./components/Resources";
+import Sponsors from "./components/Sponsors";
+import "./App.css";
 
 class App extends React.Component {
   state = {
     sideDrawerOpen: false
-  }
+  };
   drawerToggleClickHandler = () => {
     this.setState(prevState => {
-      return { sideDrawerOpen: !prevState.sideDrawerOpen }
-    })
-  }
+      return { sideDrawerOpen: !prevState.sideDrawerOpen };
+    });
+  };
   backdropClickHandler = () => {
-    this.setState({ sideDrawerOpen: false })
-  }
+    this.setState({ sideDrawerOpen: false });
+  };
   render() {
-    let backdrop
+    let backdrop;
     if (this.state.sideDrawerOpen) {
-      backdrop = <Backdrop click={this.backdropClickHandler} />
+      backdrop = <Backdrop click={this.backdropClickHandler} />;
     }
     return (
       <React.Fragment>
@@ -68,12 +69,14 @@ class App extends React.Component {
 
           <Faq title="Will there be food?" content="Yes :)" />
 
+          <Sponsors />
+
           <Contact />
           <Footer />
         </div>
       </React.Fragment>
-    )
+    );
   }
 }
 
-export default App
+export default App;
