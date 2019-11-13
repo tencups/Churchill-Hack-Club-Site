@@ -13,10 +13,12 @@ const Sponsors = () => {
   return (
     <Section>
       <h1>Big thanks to our sponsors!</h1>
-      <img
-        src="https://images.ctfassets.net/fo9twyrwpveg/60hOdQTUOIwWuimy0oY62a/46d0c919283b92e937c6c03895b9de21/sticker-mule-inline-light.png"
-        alt="sticker mule logo"
-      />
+      <a href="https://www.stickermule.com/">
+        <img
+          src="https://images.ctfassets.net/fo9twyrwpveg/60hOdQTUOIwWuimy0oY62a/46d0c919283b92e937c6c03895b9de21/sticker-mule-inline-light.png"
+          alt="sticker mule logo"
+        />
+      </a>
     </Section>
   );
 };
