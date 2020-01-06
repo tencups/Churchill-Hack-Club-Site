@@ -29,10 +29,10 @@ const Card = () => {
         <br />
         <br />
         <span style={{ padding: "0px 1%" }}>
-          Next Meeting is on <span style={{ fontSize: "110%" }}>11/14</span>
+          Next Meeting is on <span style={{ fontSize: "110%" }}>1/9</span>
         </span>
         <br />
-        <Countdown date={"Thu, 14 Nov 2019 11:15:00"} />
+        <Countdown date={"Thu, 09 Jan 2020 11:15:00"} />
       </h1>
     </div>
   );
